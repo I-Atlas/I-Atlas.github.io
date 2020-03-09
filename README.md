@@ -1,1 +1,1 @@
-# i-atlasinfo.github.io
+# I-Atlas.github.io
