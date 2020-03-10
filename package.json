@@ -11,12 +11,8 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/I-Atlas/my_package.git"
-  },
-  "keywords": [],
+  "keywords": [I-Atlas],
   "author": "",
   "license": "MIT",
-  "homepage": "https://github.com/I-Atlas/my_package"
+  "homepage": "https://github.com/I-Atlas/I-Atlas.github.io"
 }
