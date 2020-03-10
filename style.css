@@ -2,8 +2,8 @@
 html
 {
 	font-family: 'Roboto', sans-serif;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:  110%;
+	-webkit-text-size-adjust: 110%;
 }
 a
 {
@@ -40,8 +40,8 @@ svg:not(:root)
 }
 body
 {
-	background: #fff;
-	color: #070106;
+	background: #ffffff;
+	color: #000000;
 	font-family: 'Roboto', sans-serif;
 	overflow: hidden;
 }
@@ -60,7 +60,7 @@ a:hover
 	position: relative;
 	z-index: 1;
 }
-.main_bg
+.main_bg /*Left gif background */
 {
 	background-image: url(https://media.giphy.com/media/26xBukhJ0i8KXADYc/giphy.gif);
 	background-position: center;
@@ -69,19 +69,6 @@ a:hover
 	overflow: hidden;
 	position: relative;
 	width: 40%;
-}
-.main_email
-{
-	bottom: 20px;
-	display: none;
-	font-size: 20px;
-	left: 10%;
-	margin-top: 40px;
-	position: absolute;
-}
-.main_email b,.main_email a
-{
-	font-family: 'Roboto', sans-serif;
 }
 .main_info
 {
@@ -94,14 +81,14 @@ a:hover
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	width: 650px;
+	width: 600px;
 }
 .main_info-center h1
 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 100px;
-	letter-spacing: .9px;
-	line-height: 100px;
+	font-size: 110px;
+	letter-spacing: .15px;
+	line-height: 110px;
 	margin-bottom: 20px;
 	transition: text-shadow .3s ease-out;
 	width: 600px;
@@ -110,14 +97,14 @@ a:hover
 {
 	color: #070106;
 	font-family: 'Roboto', sans-serif;
-	font-size: 29px;
+	font-size: 30px;
 	letter-spacing: -1px;
-	line-height: 61px;
+	line-height: 60px;
 	width: 650px;
 }
 .main_info-center p a
 {
-	font-size: 26px;
+	font-size: 25px;
 }
 @media screen and (max-width:1140px)
 {
@@ -127,7 +114,7 @@ a:hover
 	}
 	.main_info--left p
 	{
-		font-size: 28px;
+		font-size: 30px;
 		width: 100%;
 	}
 }
@@ -147,7 +134,7 @@ a:hover
 	}
 	.main_left p
 	{
-		font-size: 26px;
+		font-size: 25px;
 	}
 	.main_info
 	{
@@ -170,12 +157,8 @@ a:hover
 }
 .grid div
 {
-	border-right: 1px solid #f5f5f5;
+	border-right: 1px solid #ffffff;
 	display: inline-block;
 	height: 100vh;
 	width: 10%;
 }
-
-@media screen and (max-width: 1280px) { div.contentblock {width: 1200px;} }
-@media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} }
-@media screen and (max-width: 992px)  { div.contentblock {width: 970px;} }
