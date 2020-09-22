@@ -6,7 +6,7 @@ import { LINES, Lines } from "..";
 function Scene() {
   let group = useRef();
   let theta = 0;
-  // Hook into the render loop and rotate the scene a bit
+
   useFrame(() =>
     group.current.rotation.set(
       0,
@@ -14,13 +14,14 @@ function Scene() {
       0
     )
   );
+
   return (
     <group ref={group}>
-       <group position={[0, -50, 0]}>
-         {LINES.map((_, index) => (
-        <Lines key={index} />
-      ))}
-       </group>
+      <group position={[0, -50, 0]}>
+        {LINES.map((_, index) => (
+          <Lines key={index} />
+        ))}
+      </group>
     </group>
   );
 }

@@ -1,5 +1,5 @@
 export const LINES = new Array(75).fill();
-export const COLORS = ['#FBE7D3', '#7FFFD4', '#FCCEBE', '#2E3280'];
+export const COLORS = ["#6D071A", "#cecbc5", "#FF4500", "#1329f0"];
 export const DEFAULT = 0;
 export const OCCLUSION = 1;
 

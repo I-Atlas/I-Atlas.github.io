@@ -1,9 +1,20 @@
 {
-  "name": "portfolio",
+  "name": "personal",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Iliya Bolotov",
+    "email": "bolotov.iliya.w@gmail.com",
+    "url": "https://i-atlas.github.io"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/I-Atlas/I-Atlas.github.io.git"
+  },
   "homepage": "https://i-atlas.github.io/",
   "dependencies": {
+    "drei": "^1.5.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
@@ -17,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gb-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

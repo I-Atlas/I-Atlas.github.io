@@ -24,7 +24,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
   helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   color: black;
-  cursor: url('/eclipse.svg'), pointer;
+  cursor: url('/cursor.svg'), auto;
 }
 
 canvas {
@@ -32,6 +32,6 @@ canvas {
   height: 100%;
   position: relative;
   top: 0;
-  pointer-events: none;
+  /* pointer-events: none; */
   overflow: hidden;
 }

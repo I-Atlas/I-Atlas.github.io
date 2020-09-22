@@ -3,7 +3,7 @@ import React, { useRef, useMemo } from "react";
 import { useLoader, useFrame } from "react-three-fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
-import { DEFAULT } from "../../../Model/components";
+import { DEFAULT } from "../";
 
 function Renders({ layer = DEFAULT }) {
   const group = useRef();
@@ -17,15 +17,15 @@ function Renders({ layer = DEFAULT }) {
   const material = useMemo(() => {
     if (layer === DEFAULT)
       return new THREE.MeshStandardMaterial({
-        color: new THREE.Color("#5e5557"),
-        roughness: 0.5,
+        color: new THREE.Color("#AA7042"),
+        roughness: 0.45,
         metalness: 1.3,
         wireframe: true,
       });
-    return new THREE.MeshBasicMaterial({ color: new THREE.Color("#5e5557") });
+    return new THREE.MeshBasicMaterial({ color: new THREE.Color("#DEB82D") });
   }, [layer]);
 
- useFrame(() => {
+  useFrame(() => {
     group.current.rotation.y += 0.001;
   });
 

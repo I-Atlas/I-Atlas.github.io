@@ -35,7 +35,7 @@ function Lines() {
       );
   });
 
-  useFrame(() => (material.current.uniforms.dashOffset.value -= 0.0004));
+  useFrame(() => (material.current.uniforms.dashOffset.value -= 0.0002));
 
   return (
     <mesh>
@@ -53,11 +53,11 @@ function Lines() {
       <meshLineMaterial
         attach="material"
         ref={material}
-        transparent
+        // transparent
         depthTest={false}
         lineWidth={width}
         color={color}
-        dashArray={0.1}
+        dashArray={0.2}
         dashRatio={ratio}
       />
     </mesh>
