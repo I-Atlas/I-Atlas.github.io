@@ -1,28 +1,23 @@
-import * as THREE from "three";
 import React, { useRef, useMemo } from "react";
-import { useLoader, useFrame } from "react-three-fiber";
+import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
-import { DEFAULT } from "../";
+import { useLoader, useFrame } from "react-three-fiber";
+import { draco } from "drei";
+import { DEFAULT } from "..";
 
-function Renders({ layer = DEFAULT }) {
+function Model({ layer = DEFAULT }) {
   const group = useRef();
 
-  const gltf = useLoader(GLTFLoader, "/scene.glb", (loader) => {
-    const dracoLoader = new DRACOLoader();
-    dracoLoader.setDecoderPath("/draco-gltf/");
-    loader.setDRACOLoader(dracoLoader);
-  });
+  const gltf = useLoader(GLTFLoader, "/scene.glb", draco());
 
   const material = useMemo(() => {
     if (layer === DEFAULT)
       return new THREE.MeshStandardMaterial({
-        color: new THREE.Color("#AA7042"),
-        roughness: 0.45,
-        metalness: 1.3,
-        wireframe: true,
+        color: new THREE.Color("#EBC8B2"),
+        roughness: 1,
+        metalness: 1.4,
       });
-    return new THREE.MeshBasicMaterial({ color: new THREE.Color("#DEB82D") });
+    return new THREE.MeshBasicMaterial({ color: new THREE.Color("#EBC8B2") });
   }, [layer]);
 
   useFrame(() => {
@@ -31,7 +26,7 @@ function Renders({ layer = DEFAULT }) {
 
   return (
     <group ref={group}>
-      <group rotation={[-1.5707963267948963, 0, 0]} position={[0, 2, 0]}>
+      <group rotation={[-1.57, 0, 0]} position={[0, 2, 0]}>
         <mesh material={material} layers={layer} receiveShadow castShadow>
           <bufferGeometry attach="geometry" {...gltf.__$[4].geometry} />
         </mesh>
@@ -46,4 +41,4 @@ function Renders({ layer = DEFAULT }) {
   );
 }
 
-export default Renders;
+export default Model;

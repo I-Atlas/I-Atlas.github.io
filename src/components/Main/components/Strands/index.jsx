@@ -1,18 +1,18 @@
-import * as THREE from "three";
 import React, { useState, useRef } from "react";
+import * as THREE from "three";
+import * as meshline from "three.meshline";
 import { extend, useFrame } from "react-three-fiber";
 import { COLORS } from "..";
-import * as meshline from "three.meshline";
 
 extend(meshline);
 
-function Lines() {
+function Strands() {
   const material = useRef();
   const [color] = useState(
     () => COLORS[parseInt(COLORS.length * Math.random())]
   );
   const [ratio] = useState(() => 0.5 + 0.5 * Math.random());
-  const [width] = useState(() => Math.max(0.1, 0.3 * Math.random()));
+  const [width] = useState(() => Math.max(0.1, 0.4 * Math.random()));
   const [curve] = useState(() => {
     let pos = new THREE.Vector3(
       30 - 60 * Math.random(),
@@ -35,7 +35,7 @@ function Lines() {
       );
   });
 
-  useFrame(() => (material.current.uniforms.dashOffset.value -= 0.0002));
+  useFrame(() => (material.current.uniforms.dashOffset.value -= 0.0005));
 
   return (
     <mesh>
@@ -53,7 +53,6 @@ function Lines() {
       <meshLineMaterial
         attach="material"
         ref={material}
-        // transparent
         depthTest={false}
         lineWidth={width}
         color={color}
@@ -64,4 +63,4 @@ function Lines() {
   );
 }
 
-export default Lines;
+export default Strands;
