@@ -1,10 +1,8 @@
 import React from "react";
-import { useSpring, animated } from "react-spring";
 import { Scene, github, linkedin, gmail, telegram } from "./components";
 import "./index.css";
 
 function Main() {
-  const header = useSpring({ opacity: 0.9, from: { opacity: -1 } });
   return (
     <div className="main">
       <Scene />
@@ -20,9 +18,9 @@ function Main() {
       <a href="https://t.me/I_Atlas" className="bottom-left">
         <img src={telegram} alt="Telegram" width="50" heigh="50" />
       </a>
-      <animated.div className="header" style={header}>
+      <div className="header">
         Iliya Bolotov
-      </animated.div>
+      </div>
     </div>
   );
 }

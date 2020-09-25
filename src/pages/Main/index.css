@@ -8,6 +8,7 @@
 div.header {
   font-family: "Play", sans-serif;
   display: flex;
+  opacity: 0.9;
   align-items: center;
   justify-content: center;
   transform: translate3d(0, -450%, 0);
