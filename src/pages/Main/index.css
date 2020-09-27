@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-div.header {
+.header {
   font-family: "Play", sans-serif;
   display: flex;
   opacity: 0.9;
@@ -18,36 +18,62 @@ div.header {
 
 a {
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: "Play", sans-serif;
   position: absolute;
   font-size: 1.1em;
   display: inline;
-  text-decoration: none;
 }
 
-a.top-left {
+.image {
+  width: 75px;
+}
+
+.top-left {
   top: 50px;
   left: 50px;
 }
 
-a.top-right {
+.top-right {
   top: 50px;
   right: 50px;
 }
 
-a.bottom-left {
+.bottom-left {
   bottom: 50px;
   left: 50px;
 }
 
-a.bottom-right {
+.bottom-right {
   bottom: 50px;
   right: 50px;
 }
 
 @media only screen and (max-width: 750px) {
-  div.header {
+  .top-left {
+    top: 25px;
+    left: 25px;
+  }
+
+  .top-right {
+    top: 25px;
+    right: 25px;
+  }
+
+  .bottom-left {
+    bottom: 25px;
+    left: 25px;
+  }
+
+  .bottom-right {
+    bottom: 25px;
+    right: 25px;
+  }
+
+  .image {
+    width: 55px;
+  }
+
+  .header {
     transform: translate3d(0, -800%, 0);
     font-size: 3.8em;
   }

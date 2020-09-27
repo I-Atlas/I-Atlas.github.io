@@ -10,7 +10,7 @@ function StrandsMovement() {
   useFrame(() =>
     group.current.rotation.set(
       0,
-      5 * Math.sin(THREE.Math.degToRad((theta += 0.003))),
+      5 * Math.sin(THREE.Math.degToRad((theta += 0.005))),
       0
     )
   );

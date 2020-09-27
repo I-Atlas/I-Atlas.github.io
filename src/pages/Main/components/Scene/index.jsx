@@ -1,7 +1,8 @@
 import React, { Suspense } from "react";
 import { Canvas } from "react-three-fiber";
 import { Stars } from "drei";
-import { StrandsMovement, Model } from "..";
+import { Model } from "..";
+import { StrandsMovement } from "../../../../components";
 
 function Scene() {
   return (
@@ -21,7 +22,7 @@ function Scene() {
       <Suspense fallback={null}>
         <Model />
       </Suspense>
-      <Stars />
+      <Stars  />
       <StrandsMovement />
     </Canvas>
   );

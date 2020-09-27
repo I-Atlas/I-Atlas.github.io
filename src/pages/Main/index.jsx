@@ -6,21 +6,19 @@ function Main() {
   return (
     <div className="main">
       <Scene />
+      <div className="header">Iliya Bolotov</div>
       <a href="https://github.com/I-Atlas" className="top-left">
-        <img src={github} alt="GitHub" width="50" heigh="50" />
+        <img className="image" src={github} alt="GitHub" />
       </a>
       <a href="https://www.linkedin.com/in/bolotov-iliya" className="top-right">
-        <img src={linkedin} alt="LinkedIn" width="50" heigh="50" />
+        <img className="image" src={linkedin} alt="LinkedIn" />
       </a>
       <a href="mailto:bolotov.iliya.w@gmail.com" className="bottom-right">
-        <img src={gmail} alt="Gmail" width="50" heigh="50" />
+        <img className="image" src={gmail} alt="Gmail" />
       </a>
       <a href="https://t.me/I_Atlas" className="bottom-left">
-        <img src={telegram} alt="Telegram" width="50" heigh="50" />
+        <img className="image" src={telegram} alt="Telegram" />
       </a>
-      <div className="header">
-        Iliya Bolotov
-      </div>
     </div>
   );
 }

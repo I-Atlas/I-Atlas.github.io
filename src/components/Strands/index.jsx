@@ -35,7 +35,7 @@ function Strands() {
       );
   });
 
-  useFrame(() => (material.current.uniforms.dashOffset.value -= 0.0005));
+  useFrame(() => (material.current.uniforms.dashOffset.value -= 0.001));
 
   return (
     <mesh>
