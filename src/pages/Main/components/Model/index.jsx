@@ -21,7 +21,7 @@ function Model({ layer = DEFAULT }) {
   }, [layer]);
 
   useFrame(() => {
-    group.current.rotation.y += 0.001;
+    group.current.rotation.y += 0.0005;
   });
 
   return (
