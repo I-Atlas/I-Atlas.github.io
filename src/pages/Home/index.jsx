@@ -1,12 +1,16 @@
 import React from "react";
-import { Scene, github, linkedin, gmail, telegram } from "./components";
-import "./index.css";
+import { Scene } from "./components";
+import { Link } from "react-router-dom";
+import { github, linkedin, gmail, telegram } from "../../components";
+import "./styles.css";
 
-function Main() {
+function Home() {
   return (
-    <div className="main">
+    <React.Fragment>
       <Scene />
-      <div className="header">Iliya Bolotov</div>
+      <Link to="/portfolio" className="header">
+        Iliya Bolotov
+      </Link>
       <a href="https://github.com/I-Atlas" className="top-left">
         <img className="image" src={github} alt="GitHub" />
       </a>
@@ -19,8 +23,8 @@ function Main() {
       <a href="https://t.me/I_Atlas" className="bottom-left">
         <img className="image" src={telegram} alt="Telegram" />
       </a>
-    </div>
+    </React.Fragment>
   );
 }
 
-export default Main;
+export default Home;

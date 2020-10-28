@@ -1,8 +1,7 @@
 import React, { Suspense } from "react";
 import { Canvas } from "react-three-fiber";
 import { Stars } from "drei";
-import { Model } from "..";
-import { StrandsMovement } from "../../../../components";
+import { Model, StrandsMovement } from "..";
 
 function Scene() {
   return (

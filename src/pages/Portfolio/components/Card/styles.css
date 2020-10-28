@@ -1,0 +1,111 @@
+.card {
+  font-family: "Poppins", sans-serif;
+  transform-style: preserve-3d;
+  min-height: 70vh;
+  width: 35rem;
+  border-radius: 30px;
+  padding: 3rem 3rem;
+}
+
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sneaker img {
+  width: 10rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  text-align: center;
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+}
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+
+.language h2 {
+  text-align: center;
+}
+
+.purchase a {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  transition: all 0.75s ease-out;
+  text-decoration: none;
+}
+
+.github {
+  width: 50%;
+  padding: 1rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+.homepage {
+  width: 50%;
+  padding: 1rem;
+  background: #5c5c5c;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+
+  .circle {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .sneaker img {
+    width: 5rem;
+  }
+
+  .sizes {
+    justify-content: space-around;
+  }
+
+  .info h1 {
+    font-size: 2.5rem;
+  }
+  .info h3 {
+    font-size: 1rem;
+  }
+
+  .geithub .homepage {
+    width: 50%;
+  }
+}

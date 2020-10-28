@@ -1,7 +1,7 @@
 import React from "react";
 import { animated, useTransition } from "@react-spring/web";
 import { useProgress } from "drei";
-import "./index.css";
+import "./styles.css";
 
 function Loader() {
   const { active, progress } = useProgress();
