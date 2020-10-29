@@ -1,7 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
 import { Button } from "@material-ui/core";
-import "./styles.css";
+import styles from "./card.module.css";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 const trans1 = (x, y) => `translate3d(${x / 20}px,${y / 20}px,0)`;
@@ -24,11 +24,11 @@ function Card(props) {
         onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
       >
         <animated.div
-          className="card"
+          className={styles.card}
           style={{ transform: springProps.xy.interpolate(trans1) }}
         >
-          <div className="sneaker">
-            <div className="circle"></div>
+          <div className={styles.sneaker}>
+            <div className={styles.circle}></div>
             <animated.img
               src={props.image}
               alt="adidas"
@@ -36,30 +36,40 @@ function Card(props) {
             />
           </div>
           <animated.div
-            className="info"
+            className={styles.info}
             style={{ transform: springProps.xy.interpolate(trans1) }}
           >
-            <h1 className="title">{capitalizeFirstLetter(props.title)}</h1>
+            <h1 className={styles.title}>
+              {capitalizeFirstLetter(props.title)}
+            </h1>
             <h3 role="img" aria-label="info">
               {props.description}
             </h3>
             <animated.div
-              className="language"
+              className={styles.language}
               style={{ transform: springProps.xy.interpolate(trans2) }}
             >
               <h2>{props.language}</h2>
             </animated.div>
-            <div className="purchase">
-              <a href="https://github.com/I-Atlas/arkanoid">
-                <Button className="github">Github</Button>
-              </a>
-              {/* {props.homepage.length > 0 ? (
-                <a href={props.homepage}>
-                  <Button className="homepage">Homepage</Button>
-                </a>
+            <div className={styles.purchase}>
+              <Button
+                href={props.github}
+                className={styles.github}
+                style={{ borderRadius: 20, margin: 10 }}
+              >
+                Github
+              </Button>
+              {props.homepage.length > 0 ? (
+                <Button
+                  href={props.homepage}
+                  className={styles.homepage}
+                  style={{ borderRadius: 20, margin: 10 }}
+                >
+                  View
+                </Button>
               ) : (
                 <></>
-              )} */}
+              )}
             </div>
           </animated.div>
         </animated.div>

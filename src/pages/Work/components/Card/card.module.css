@@ -2,8 +2,7 @@
   font-family: "Poppins", sans-serif;
   transform-style: preserve-3d;
   min-height: 70vh;
-  width: 35rem;
-  border-radius: 30px;
+  width: 40rem;
   padding: 3rem 3rem;
 }
 
@@ -17,7 +16,6 @@
 .sneaker img {
   width: 10rem;
   z-index: 2;
-  transition: all 0.75s ease-out;
 }
 
 .circle {
@@ -36,47 +34,41 @@
 .info h1 {
   text-align: center;
   font-size: 3rem;
-  transition: all 0.75s ease-out;
 }
 .info h3 {
   font-size: 1.3rem;
   padding: 2rem 0rem;
   color: #585858;
   font-weight: lighter;
-  transition: all 0.75s ease-out;
 }
 
 .language h2 {
   text-align: center;
 }
 
-.purchase a {
+.purchase {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
-  transition: all 0.75s ease-out;
+  margin-top: 3rem;
   text-decoration: none;
 }
 
 .github {
-  width: 50%;
-  padding: 1rem;
-  background: #f54642;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 30px;
-  font-weight: bolder;
+  width: 35%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 143, 142, 0.75),
+    rgba(255, 171, 102, 0.75)
+  );
 }
 
 .homepage {
-  width: 50%;
-  padding: 1rem;
-  background: #5c5c5c;
-  color: white;
-  cursor: pointer;
-  border-radius: 30px;
-  font-weight: bolder;
+  width: 35%;
+  background: linear-gradient(
+    to right,
+    rgba(136, 136, 136, 0.75),
+    rgba(114, 114, 114, 0.75)
+  );
 }
 
 @media only screen and (max-width: 600px) {

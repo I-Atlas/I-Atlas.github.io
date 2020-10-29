@@ -12,14 +12,14 @@
   z-index: 1000;
 }
 
-.loading-bar-container {
+.container {
   width: 100px;
   height: 32px;
   border-radius: 100px;
   background: #272727;
 }
 
-.loading-bar {
+.bar {
   height: 32px;
   animation: load 1s normal forwards;
   box-shadow: 0 10px 40px -10px #ffffff;

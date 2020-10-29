@@ -1,6 +1,6 @@
 import React from "react";
 
-function Resume() {
+function About() {
   return (
     <React.Fragment>
       <h1>Resume</h1>
@@ -8,4 +8,4 @@ function Resume() {
   );
 }
 
-export default Resume;
+export default About;

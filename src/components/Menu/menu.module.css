@@ -1,18 +1,28 @@
-.trails-text {
-  position: relative;
+.menu {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.text {
   width: 100%;
-  height: 80px;
   padding: 0.5rem;
   line-height: 80px;
-  color: rgb(66, 61, 63);
+  color: #ff7d7d;
   font-size: 2.5em;
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
 }
 
+.text:hover {
+  color: #646464;
+}
+
 @media only screen and (max-width: 600px) {
-  .trails-text {
+  .text {
     font-size: 1.5em;
   }
 }

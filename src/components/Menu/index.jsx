@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import { useTrail, animated } from "react-spring";
-import "./styles.css";
+import styles from "./menu.module.css";
 
 function Menu(props) {
   const trail = useTrail(props.items.length, {
@@ -13,13 +13,14 @@ function Menu(props) {
   });
 
   return (
-    <React.Fragment>
+    // <div className={styles.menu}>
       <Grid
         container
         direction="row"
         alignItems="flex-end"
         justify="center"
         spacing={3}
+        className={styles.menu}
       >
         {trail.map(({ x, height, opacity }, index) => (
           <animated.div
@@ -30,14 +31,14 @@ function Menu(props) {
             }}
           >
             <animated.div style={{ height }}>
-              <NavLink className="trails-text" to={`/${props.items[index] === "home" ? "" : props.items[index]}`}>
+              <NavLink className={styles.text} to={`/${props.items[index] === "home" ? "" : props.items[index]}`}>
                 {props.items[index]}
               </NavLink>
             </animated.div>
           </animated.div>
         ))}
       </Grid>
-    </React.Fragment>
+    // </div>
   );
 }
 

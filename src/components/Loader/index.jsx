@@ -1,7 +1,7 @@
 import React from "react";
 import { animated, useTransition } from "@react-spring/web";
 import { useProgress } from "drei";
-import "./styles.css";
+import styles from "./loader.module.css";
 
 function Loader() {
   const { active, progress } = useProgress();
@@ -13,10 +13,10 @@ function Loader() {
   return transition(
     ({ progress, opacity }, active) =>
       active && (
-        <animated.div className="loading" style={{ opacity }}>
-          <div className="loading-bar-container">
+        <animated.div className={styles.loading} style={{ opacity }}>
+          <div className={styles.container}>
             <animated.div
-              className="loading-bar"
+              className={styles.bar}
               style={{ width: progress }}
             ></animated.div>
           </div>
