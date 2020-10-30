@@ -5,7 +5,7 @@ import { useTrail, animated } from "react-spring";
 import styles from "./menu.module.css";
 
 function Menu(props) {
-  const trail = useTrail(props.items.length, {
+  const trails = useTrail(props.items.length, {
     opacity: 1,
     x: 0,
     height: 80,
@@ -13,16 +13,13 @@ function Menu(props) {
   });
 
   return (
-    // <div className={styles.menu}>
       <Grid
         container
-        direction="row"
-        alignItems="flex-end"
         justify="center"
         spacing={3}
         className={styles.menu}
       >
-        {trail.map(({ x, height, opacity }, index) => (
+        {trails.map(({ x, height, opacity }, index) => (
           <animated.div
             key={index}
             style={{
@@ -38,7 +35,6 @@ function Menu(props) {
           </animated.div>
         ))}
       </Grid>
-    // </div>
   );
 }
 
