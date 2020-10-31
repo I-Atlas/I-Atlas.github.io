@@ -13,9 +13,9 @@ function Model({ layer = DEFAULT }) {
   const material = useMemo(() => {
     if (layer === DEFAULT)
       return new THREE.MeshStandardMaterial({
-        color: new THREE.Color("#EBC8B2"),
+        color: new THREE.Color("#e9d5cc"),
         roughness: 1,
-        metalness: 1.4,
+        metalness: 1.2,
       });
     return new THREE.MeshBasicMaterial({ color: new THREE.Color("#EBC8B2") });
   }, [layer]);

@@ -5,7 +5,7 @@
 }
 
 .center {
-  color: #ebe7df;
+  color: #2c2c2c;
   display: flex;
   opacity: 0.9;
   align-items: center;
@@ -15,7 +15,7 @@
 }
 
 .top {
-  color: #ffffff;
+  color: #ff4444;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,7 @@
 }
 
 .bottom {
-  color: #ffffff;
+  color: #ff4444;
   transform: translate(0, -480%);
   display: flex;
   align-items: center;
@@ -34,12 +34,13 @@
 
 .link {
   padding: 0.5rem;
-  color: #ffffff;
+  color: #ff4444;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .link:hover {
-  color: #ff7d7d;
+  color: #2c2c2c;
 }
 
 @media only screen and (max-width: 1024px) {

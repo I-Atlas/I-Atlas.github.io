@@ -1,0 +1,17 @@
+.image {
+  width: 75px;
+  margin: 2rem;
+}
+
+.contact {
+  max-width: 1400px;
+  margin: 141px auto;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact {
+      padding: 0px;
+      margin-top: 50px;
+  }
+}

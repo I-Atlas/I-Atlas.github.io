@@ -6,7 +6,7 @@ import { Model, StrandsMovement } from "..";
 function Scene() {
   return (
     <Canvas
-      style={{ background: "#0d1c2b" }}
+      style={{ background: "#f4f0e5" }}
       camera={{ position: [0, 0, 10], fov: 50 }}
     >
       <ambientLight intensity={0.5} />

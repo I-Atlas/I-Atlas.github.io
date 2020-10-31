@@ -1,0 +1,117 @@
+h1 {
+  margin: 0;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+p {
+  margin: 15px 0;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+}
+
+.about {
+  max-width: 1400px;
+  margin: 200px auto;
+  padding: 50px;
+}
+
+.title {
+  font-size: 70px;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: rgb(161, 161, 161);
+}
+
+.left {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.right {
+  width: 40%;
+}
+
+.image {
+  width: 50vh;
+}
+
+.link {
+  letter-spacing: initial;
+  color: #ff6f61;
+  text-decoration: underline;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .image {
+    width: 40vh;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about {
+    margin: 100px auto;
+    padding: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .right {
+    height: 300px;
+    width: 100%;
+  }
+
+  .left {
+      margin-top: 50px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .image {
+    width: 30vh;
+  }
+
+  .right {
+    height: 40vw;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .linkedin {
+    font-size: 16px;
+  }
+}

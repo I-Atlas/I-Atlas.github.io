@@ -28,7 +28,7 @@ function Menu(props) {
             }}
           >
             <animated.div style={{ height }}>
-              <NavLink className={styles.text} to={`/${props.items[index] === "home" ? "" : props.items[index]}`}>
+              <NavLink className={styles.menu_text} to={`/${props.items[index] === "home" ? "" : props.items[index]}`}>
                 {props.items[index]}
               </NavLink>
             </animated.div>

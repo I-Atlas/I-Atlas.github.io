@@ -6,23 +6,24 @@
   opacity: 0.9;
 }
 
-.text {
+.menu_text {
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
   line-height: 80px;
-  color: #ff7d7d;
+  color: #ff4444;
   font-size: 2.5em;
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
+  transition: 0.5s;
 }
 
-.text:hover {
-  color: #646464;
+.menu_text:hover {
+  color: #2c2c2c;
 }
 
 @media only screen and (max-width: 600px) {
-  .text {
+  .menu_text {
     font-size: 1.5em;
   }
 }
