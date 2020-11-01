@@ -1,5 +1,4 @@
 .menu {
-  position: sticky;
   top: 0px;
   z-index: 100;
   background-color: rgb(255, 255, 255);
@@ -8,11 +7,10 @@
 
 .menu_text {
   width: 100%;
-  padding: 1rem;
-  line-height: 80px;
+  padding: 4rem;
+  line-height: 100px;
   color: #ff4444;
   font-size: 2.5em;
-  font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
   transition: 0.5s;
@@ -25,5 +23,6 @@
 @media only screen and (max-width: 600px) {
   .menu_text {
     font-size: 1.5em;
+    padding: 1rem;
   }
 }

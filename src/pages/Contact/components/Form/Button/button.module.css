@@ -1,0 +1,61 @@
+.form_button {
+  background-color: transparent;
+  color: #2c2c2c;
+  margin: 50px;
+  font-size: 24px;
+  padding: 10px 50px 10px 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  border: none;
+  transform: scale(1.5); /*change scale(3) to scale(1)*/
+}
+
+.form_button .button_background {
+  background: #2c2c2c;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  border-radius: 5px;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.form_button:hover {
+  padding-right: 20px;
+  color: #fff;
+}
+
+.form_button:hover .button_background {
+  height: 100%;
+  width: 100%;
+  transform: translate(0, -50%);
+}
+
+.form_button .button_background:before,
+.form_button .button_background:after {
+  content: "";
+  height: 2px;
+  width: 8px;
+  background: #2c2c2c;
+  position: absolute;
+  right: 0px;
+  transition: all 0.5s;
+}
+
+.form_button .button_background:before {
+  bottom: 3px;
+  transform: rotate(45deg);
+}
+.form_button .button_background:after {
+  top: 3px;
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 767px) {
+  .form_button {
+    margin: 20px;
+    transform: scale(1.3);
+  }
+}

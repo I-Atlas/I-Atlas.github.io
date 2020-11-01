@@ -57,12 +57,16 @@
   .top {
     transform: translate3d(0, -2850%, 0);
   }
+  .center {
+    transform: translate3d(0, -450%, 0);
+  }
 }
 
 @media only screen and (max-width: 450px) {
   .center {
     transform: translate3d(0, -750%, 0);
     font-size: 3.8em;
+    color: #ff6f61;
   }
 
   .top {

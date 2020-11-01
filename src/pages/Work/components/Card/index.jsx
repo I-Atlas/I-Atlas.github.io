@@ -1,8 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
-import { Button } from "@material-ui/core";
+import { useCapitalizeFirstLetter } from "../../../../utils";
 import styles from "./card.module.css";
-import { capitalizeFirstLetter } from "../../../../utils";
 
 function Card(props) {
   const [springProps, setSpring] = useSpring(() => ({
@@ -39,7 +38,9 @@ function Card(props) {
           className={styles.info}
           style={{ transform: springProps.xy.interpolate(trans1) }}
         >
-          <h1 className={styles.title}>{capitalizeFirstLetter(props.title)}</h1>
+          <h1 className={styles.title}>
+            {useCapitalizeFirstLetter(props.title)}
+          </h1>
           <h3>{props.description}</h3>
           <animated.div
             className={styles.language}
@@ -49,24 +50,16 @@ function Card(props) {
           </animated.div>
           <div className={styles.purchase}>
             {props.github.length > 0 ? (
-              <Button
-                href={props.github}
-                className={styles.github}
-                style={{ borderRadius: 10, margin: 10 }}
-              >
-                Github
-              </Button>
+              <a className={styles.github_button} href={props.github}>
+                github
+              </a>
             ) : (
               <></>
             )}
             {props.homepage.length > 0 ? (
-              <Button
-                href={props.homepage}
-                className={styles.homepage}
-                style={{ borderRadius: 10, margin: 10 }}
-              >
-                View
-              </Button>
+              <a className={styles.homepage_button} href={props.homepage}>
+                view
+              </a>
             ) : (
               <></>
             )}

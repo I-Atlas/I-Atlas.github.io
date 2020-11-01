@@ -13,12 +13,10 @@ export { default as linkedin_white } from "../assets/linkedin_white.svg";
 export { default as instagram_white } from "../assets/instagram_white.svg";
 export { default as telegram_white } from "../assets/telegram_white.svg";
 
-export { default as brightness } from "../assets/brightness.svg";
-export { default as clipboard } from "../assets/clipboard.svg";
-export { default as covid } from "../assets/covid.svg";
-export { default as developer } from "../assets/developer.svg";
+export { default as sol } from "../assets/sol.svg";
 export { default as mars } from "../assets/mars.svg";
-export { default as search } from "../assets/search.svg";
-export { default as object } from "../assets/object.svg";
+export { default as covid } from "../assets/covid.svg";
+export { default as minesweeper } from "../assets/minesweeper.svg";
+export { default as arkanoid } from "../assets/arkanoid.svg";
 
 export { default as iliya } from "../assets/iliya.jpg";

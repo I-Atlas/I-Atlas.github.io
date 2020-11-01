@@ -23,8 +23,8 @@
   height: 15rem;
   background: linear-gradient(
     to right,
-    rgba(245, 70, 66, 0.75),
-    rgba(8, 83, 156, 0.75)
+    #f86e60,
+    #3466fc
   );
   position: absolute;
   border-radius: 50%;
@@ -53,25 +53,45 @@
   text-decoration: none;
 }
 
-.github {
-  width: 35%;
-  background: linear-gradient(
-    to right,
-    rgba(255, 143, 142, 0.75),
-    rgba(255, 171, 102, 0.75)
-  );
+.github_button {
+  margin: 10px;
+  color: #2c2c2c;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: solid 2.5px #2c2c2c;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 200px;
+  transition: 0.5s;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-.homepage {
-  width: 35%;
-  background: linear-gradient(
-    to right,
-    rgba(136, 136, 136, 0.75),
-    rgba(114, 114, 114, 0.75)
-  );
+.github_button:hover {
+  color: #ffffff;
+  background-color: #2c2c2c;
 }
 
-@media only screen and (max-width: 600px) {
+.homepage_button {
+  margin: 10px;
+  color: #ff4444;
+  font-size: 18px;
+  padding: 15px 42px;
+  border: solid 2.5px #ff4444;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 200px;
+  transition: 0.5s;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.homepage_button:hover {
+  color: #ffffff;
+  background-color: #ff4444;
+}
+
+@media only screen and (max-width: 767px) {
   .card {
     width: 100%;
     padding: 2rem 2rem;
@@ -97,7 +117,12 @@
     font-size: 1rem;
   }
 
-  .geithub .homepage {
+  .github .homepage {
     width: 50%;
+  }
+
+  .github_button .homepage_button {
+    max-width: 170px;
+    font-size: 18px;
   }
 }
