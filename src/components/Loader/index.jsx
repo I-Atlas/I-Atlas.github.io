@@ -14,9 +14,9 @@ function Loader() {
     ({ progress, opacity }, active) =>
       active && (
         <animated.div className={styles.loading} style={{ opacity }}>
-          <div className={styles.container}>
+          <div className={styles.loading_container}>
             <animated.div
-              className={styles.bar}
+              className={styles.loading_bar}
               style={{ width: progress }}
             ></animated.div>
           </div>

@@ -1,18 +1,26 @@
 import axios from "axios";
-export default class Github {
+class Github {
   constructor() {
+    this.reposArray = [];
     this.url = "https://api.github.com/repos/I-Atlas/";
   }
 
-  getRepos = async (repo) => {
-    const response = await axios.get(this.url + `${repo}`, {});
-
-    if (response.data) {
-      return response.data;
-    }
-
-    if (response.data.message) {
-      console.log(response.data.message);
+  getRepos = async (repos) => {
+    try {
+      await Promise.all(
+        repos.map(async (repoName) => {
+          const {
+            data: { name, url, homepage },
+          } = await axios.get(`${this.url}${repoName}`);
+          this.reposArray.push({ name, url, homepage });
+        })
+      );
+      console.log(this.reposArray[0]);
+      return this.reposArray;
+    } catch (error) {
+      console.log(error);
     }
   };
 }
+
+export default new Github();

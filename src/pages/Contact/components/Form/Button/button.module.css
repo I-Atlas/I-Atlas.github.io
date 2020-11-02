@@ -10,7 +10,7 @@
   transform: scale(1.5); /*change scale(3) to scale(1)*/
 }
 
-.form_button .button_background {
+.button_background {
   background: #2c2c2c;
   width: 30px;
   height: 2px;
