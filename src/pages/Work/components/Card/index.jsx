@@ -1,10 +1,9 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
-import { useCapitalizeFirstLetter } from "../../../../utils";
 import styles from "./card.module.css";
 
 function Card(props) {
-  const [springProps, setSpring] = useSpring(() => ({
+  const [spring, setSpring] = useSpring(() => ({
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 140 },
   }));
@@ -14,7 +13,7 @@ function Card(props) {
   ];
   const trans1 = (x, y) => `translate(${x / 20}px,${y / 20}px)`;
   const trans2 = (x, y) => `translate(${x / 15}px,${y / 15}px)`;
-  const trans4 = (x, y) => `translate(${x / 3.5}px,${y / 3.5}px)`;
+  const trans3 = (x, y) => `translate(${x / 3.5}px,${y / 3.5}px)`;
 
   return (
     <div
@@ -24,31 +23,30 @@ function Card(props) {
     >
       <animated.div
         className={styles.card}
-        style={{ transform: springProps.xy.interpolate(trans1) }}
+        style={{ transform: spring.xy.interpolate(trans1) }}
       >
-        <div className={styles.sneaker}>
+        <div className={styles.emoji_wrapper}>
           <div className={styles.circle}></div>
-          <animated.img
-            src={props.image}
-            alt="image"
-            style={{ transform: springProps.xy.interpolate(trans4) }}
-          />
+          <animated.h1
+            className={styles.emoji}
+            style={{ transform: spring.xy.interpolate(trans3) }}
+          >
+            {props.image}
+          </animated.h1>
         </div>
         <animated.div
           className={styles.info}
-          style={{ transform: springProps.xy.interpolate(trans1) }}
+          style={{ transform: spring.xy.interpolate(trans1) }}
         >
-          <h1 className={styles.title}>
-            {useCapitalizeFirstLetter(props.title)}
-          </h1>
+          <h1 className={styles.title}>{props.title}</h1>
           <h3>{props.description}</h3>
           <animated.div
             className={styles.language}
-            style={{ transform: springProps.xy.interpolate(trans2) }}
+            style={{ transform: spring.xy.interpolate(trans2) }}
           >
             <h2>{props.language}</h2>
           </animated.div>
-          <div className={styles.purchase}>
+          <div className={styles.button_wrapper}>
             {props.github.length > 0 ? (
               <a className={styles.github_button} href={props.github}>
                 github

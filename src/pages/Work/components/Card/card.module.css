@@ -6,29 +6,25 @@
   padding: 3rem 3rem;
 }
 
-.sneaker {
+.emoji_wrapper {
   min-height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sneaker img {
-  width: 10rem;
-  z-index: 2;
-}
-
 .circle {
   width: 15rem;
   height: 15rem;
-  background: linear-gradient(
-    to right,
-    #f86e60,
-    #3466fc
-  );
+  background: linear-gradient(to right, #ffd8d5, #d2ddff);
   position: absolute;
   border-radius: 50%;
   z-index: 1;
+}
+
+.emoji {
+  font-size: 5rem;
+  z-index: 2;
 }
 
 .info h1 {
@@ -43,10 +39,11 @@
 }
 
 .language h2 {
+  font-size: 1.4rem;
   text-align: center;
 }
 
-.purchase {
+.button_wrapper {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
@@ -102,8 +99,8 @@
     height: 10rem;
   }
 
-  .sneaker img {
-    width: 5rem;
+  .emoji {
+    font-size: 3rem;
   }
 
   .sizes {

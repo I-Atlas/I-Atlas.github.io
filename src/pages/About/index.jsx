@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid } from "@material-ui/core";
 import { Menu, Footer, iliya } from "../../components";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import styles from "./about.module.css";
 
 function About() {
@@ -30,16 +30,13 @@ function About() {
               I am actively looking for a job, don't hesitate to{" "}
               <Link className={styles.link} to="/contact">
                 contact me
-              </Link>
-               {" "}if
-              our goal is aligned.
+              </Link>{" "}
+              if our goal is aligned.
             </p>
-            <p>
-              Interested?
-            </p>
+            <p>Interested? Want to ask about my experience?</p>
             <a
               className={styles.download_button}
-              href="mailto:bolotov.iliya.w@gmail.com"
+              href="https://www.linkedin.com/in/bolotov-iliya"
             >
               Open CV
             </a>

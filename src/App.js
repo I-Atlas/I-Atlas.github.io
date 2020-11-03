@@ -1,11 +1,12 @@
 import React from "react";
-import { Loader, Routes } from "./components";
+import { Loader, Routes, Toast } from "./components";
 
 function App() {
   return (
     <React.Fragment>
       <Loader />
       <Routes />
+      <Toast />
     </React.Fragment>
   );
 }

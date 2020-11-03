@@ -11,7 +11,7 @@ function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.footer_wrapper}>
-        <p>refresh your brand identity with me.</p>
+        <p>want to see me at work?</p>
         <a
           className={styles.hire_button}
           href="mailto:bolotov.iliya.w@gmail.com"

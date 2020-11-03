@@ -25,6 +25,7 @@ textarea {
 .form textarea {
   height: 150px;
   min-height: 100px;
+  max-width: 50vh;
 }
 
 .form label {
@@ -36,5 +37,9 @@ textarea {
 @media only screen and (max-width: 767px) {
   .form {
     width: 30vh;
+  }
+
+  .form textarea {
+    max-width: 30vh;
   }
 }

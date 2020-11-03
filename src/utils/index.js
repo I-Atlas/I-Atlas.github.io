@@ -1,1 +1,2 @@
-export { default as useCapitalizeFirstLetter } from "./useCapitalizeFirstLetter";
+export { default as Toast } from "./toast";
+export { default as useDeviceDetect } from "./useDeviceDetect";
