@@ -36,7 +36,7 @@ function About() {
             <p>Interested? Want to ask about my experience?</p>
             <a
               className={styles.download_button}
-              href="https://www.linkedin.com/in/bolotov-iliya"
+              href="https://hh.ru/resume/4b027e47ff07c537380039ed1f73697a795865"
             >
               Open CV
             </a>

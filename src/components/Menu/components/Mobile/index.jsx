@@ -8,7 +8,7 @@ function Mobile(props) {
   const [open, setOpen] = useState(false);
 
   const springs = useSpring({
-    transform: open ? `translateY(0)` : `translateY(-100%)`,
+    transform: open ? `translateY(0)` : `translateY(100%)`,
     opacity: open ? 1 : 0,
   });
 

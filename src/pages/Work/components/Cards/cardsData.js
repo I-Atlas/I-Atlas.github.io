@@ -11,7 +11,7 @@ export const cardsData = [
   {
     name: "Covid-19 Tracker",
     github: "https://github.com/I-Atlas/covid-19-tracker",
-    homepage: "i-atlas.github.io/covid-19-tracker/",
+    homepage: "https://i-atlas.github.io/covid-19-tracker/",
     description:
       "Live statistics tracking the number of confirmed cases, recovered patients, and death toll due to the COVID-19 coronavirus.",
     stack: "JavaScript, React",
