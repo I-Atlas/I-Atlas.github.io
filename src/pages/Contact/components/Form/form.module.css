@@ -43,3 +43,18 @@ textarea {
     max-width: 30vh;
   }
 }
+
+@media only screen and (max-height: 500px) and (min-width: 500px) {
+  .form {
+    margin-top: 50vh;
+    margin-bottom: 50vh;
+  }
+
+  .form {
+    width: 90vh;
+  }
+
+  .form textarea {
+    max-width: 90vh;
+  }
+}

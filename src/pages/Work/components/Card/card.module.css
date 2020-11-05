@@ -16,7 +16,7 @@
 .circle {
   width: 15rem;
   height: 15rem;
-  background: linear-gradient(to right, #ffd8d5, #d2ddff);
+  background: linear-gradient(to right, #ffdddb, #cfdbff);
   position: absolute;
   border-radius: 50%;
   z-index: 1;
@@ -47,7 +47,6 @@
   display: flex;
   justify-content: center;
   margin-top: 3rem;
-  text-decoration: none;
 }
 
 .github_button {
@@ -112,10 +111,6 @@
   }
   .info h3 {
     font-size: 1rem;
-  }
-
-  .github .homepage {
-    width: 50%;
   }
 
   .github_button .homepage_button {

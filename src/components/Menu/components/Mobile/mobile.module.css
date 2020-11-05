@@ -45,3 +45,10 @@
     padding: 1rem;
   }
 }
+
+@media only screen and (max-height: 450px) {
+  .menu_text {
+    font-size: 1.3em;
+    line-height: 50px;
+  }
+}

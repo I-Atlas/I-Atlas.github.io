@@ -1,5 +1,5 @@
 .menu_button {
-  bottom: 20px;
+  bottom: 30px;
   position: fixed;
   z-index: 4;
   background-color: transparent;
@@ -8,7 +8,7 @@
 }
 
 .line {
-  opacity: 0.75;
+  opacity: 0.65;
   transform: rotate(90deg);
   transform-origin: 50% 50%;
   fill: none;

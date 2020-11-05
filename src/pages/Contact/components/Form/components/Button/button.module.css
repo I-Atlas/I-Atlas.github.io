@@ -60,3 +60,9 @@
     transform: scale(1.1);
   }
 }
+
+@media only screen and (max-height: 500px) {
+  .form_button {
+    transform: scale(1.1);
+  }
+}

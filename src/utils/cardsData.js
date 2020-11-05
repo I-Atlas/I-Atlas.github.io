@@ -20,7 +20,8 @@ export const cardsData = [
   {
     name: "Sol",
     github: "https://github.com/I-Atlas/sol",
-    homepage: "",
+    homepage:
+      "https://discord.com/oauth2/authorize?client_id=696105849340297246&permissions=8&scope=bot",
     description:
       "Sol is a Discord bot written in Python, featuring moderation, informative, and fun commands.",
     stack: "Python",

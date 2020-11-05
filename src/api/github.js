@@ -6,7 +6,7 @@ class Github {
 
   getRepos = async (repos) => {
     try {
-      const reposArray = []
+      const reposArray = [];
       await Promise.all(
         repos.map(async (repoName) => {
           const {

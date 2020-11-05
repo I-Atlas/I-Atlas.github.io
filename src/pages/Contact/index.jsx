@@ -2,7 +2,6 @@ import React from "react";
 import { Menu, Footer } from "../../components";
 import { Grid, Container } from "@material-ui/core";
 import { Form } from "./components";
-// import styles from "./contact.module.css";
 
 function Contact() {
   return (

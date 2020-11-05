@@ -4,4 +4,19 @@ I-Atlas.github.io
 <br>
 </h1>
 
-## Personal page
+## My Personal page
+
+Technologies used:
+
+### Frontend:
+- JavaScript
+- React
+- Redux / Thunk
+- Three.js
+- React Three Fiber and ecosystem ( drei )
+- React Spring
+
+### Backend:
+- TypeScript
+- Node.js
+- Express
