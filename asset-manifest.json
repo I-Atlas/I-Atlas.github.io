@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.8394113e.chunk.css",
-    "main.js": "/static/js/main.adaad3ac.chunk.js",
-    "main.js.map": "/static/js/main.adaad3ac.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b85d870a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b85d870a.js.map",
+    "main.css": "/static/css/main.cac8c47c.chunk.css",
+    "main.js": "/static/js/main.24d71d01.chunk.js",
+    "main.js.map": "/static/js/main.24d71d01.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d487c8b3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d487c8b3.js.map",
     "static/css/2.d34346ea.chunk.css": "/static/css/2.d34346ea.chunk.css",
-    "static/js/2.09c662cc.chunk.js": "/static/js/2.09c662cc.chunk.js",
-    "static/js/2.09c662cc.chunk.js.map": "/static/js/2.09c662cc.chunk.js.map",
+    "static/js/2.13ae9d53.chunk.js": "/static/js/2.13ae9d53.chunk.js",
+    "static/js/2.13ae9d53.chunk.js.map": "/static/js/2.13ae9d53.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.647e9030eb6b6fbed6a43e585800c2dd.js": "/precache-manifest.647e9030eb6b6fbed6a43e585800c2dd.js",
+    "precache-manifest.8a6cae676304adeb7a1ec7fbe24f6851.js": "/precache-manifest.8a6cae676304adeb7a1ec7fbe24f6851.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d34346ea.chunk.css.map": "/static/css/2.d34346ea.chunk.css.map",
-    "static/css/main.8394113e.chunk.css.map": "/static/css/main.8394113e.chunk.css.map",
-    "static/js/2.09c662cc.chunk.js.LICENSE.txt": "/static/js/2.09c662cc.chunk.js.LICENSE.txt",
+    "static/css/main.cac8c47c.chunk.css.map": "/static/css/main.cac8c47c.chunk.css.map",
+    "static/js/2.13ae9d53.chunk.js.LICENSE.txt": "/static/js/2.13ae9d53.chunk.js.LICENSE.txt",
     "static/media/github_white.svg": "/static/media/github_white.39590cb7.svg",
     "static/media/iliya.jpg": "/static/media/iliya.53d6616c.jpg",
     "static/media/instagram_white.svg": "/static/media/instagram_white.9dc06eb7.svg",
@@ -21,10 +21,10 @@
     "static/media/telegram_white.svg": "/static/media/telegram_white.87d5b1a5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b85d870a.js",
+    "static/js/runtime-main.d487c8b3.js",
     "static/css/2.d34346ea.chunk.css",
-    "static/js/2.09c662cc.chunk.js",
-    "static/css/main.8394113e.chunk.css",
-    "static/js/main.adaad3ac.chunk.js"
+    "static/js/2.13ae9d53.chunk.js",
+    "static/css/main.cac8c47c.chunk.css",
+    "static/js/main.24d71d01.chunk.js"
   ]
 }
