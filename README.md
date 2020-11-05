@@ -15,8 +15,3 @@ Technologies used:
 - Three.js
 - React Three Fiber and ecosystem ( drei )
 - React Spring
-
-### Backend:
-- TypeScript
-- Node.js
-- Express

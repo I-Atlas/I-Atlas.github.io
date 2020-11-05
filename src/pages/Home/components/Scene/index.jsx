@@ -6,7 +6,7 @@ import { Model, StrandsMovement } from "..";
 function Scene() {
   return (
     <Canvas
-      style={{ background: "#f4f0e5" }}
+      style={{ background: "#fff3f0" }}
       camera={{ position: [0, 0, 10], fov: 50 }}
     >
       <ambientLight intensity={0.5} />
@@ -21,7 +21,7 @@ function Scene() {
       <Suspense fallback={null}>
         <Model />
       </Suspense>
-      <Stars  />
+      <Stars />
       <StrandsMovement />
     </Canvas>
   );

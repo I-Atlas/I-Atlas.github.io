@@ -28,9 +28,9 @@ export const cardsData = [
     image: "☀️",
   },
   {
-    name: "I-Atlas.github.io",
-    github: "https://github.com/I-Atlas/books",
-    homepage: "https://i-atlas.github.io/",
+    name: "Iliya-Bolotov",
+    github: "https://github.com/I-Atlas/iliya-bolotov",
+    homepage: "https://iliya-bolotov.vercel.app/",
     description: "This website.",
     stack:
       "JavaScript, React, Redux, Three.js, React Three Fiber, React Spring",

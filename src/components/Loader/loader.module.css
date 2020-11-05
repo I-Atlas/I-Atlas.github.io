@@ -22,9 +22,9 @@
 .loading_bar {
   height: 32px;
   animation: load 1s normal forwards;
-  box-shadow: 0 10px 40px -10px #ffffff;
+  box-shadow: 0 10px 40px -10px #fffdfc;
   border-radius: 100px;
-  background: #ffffff;
+  background: #fffdfc;
   width: 0;
 }
 

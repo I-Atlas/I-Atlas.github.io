@@ -1,18 +1,18 @@
 {
-  "name": "personal",
+  "name": "iliya-bolotov",
   "version": "1.0.0",
   "private": true,
   "author": {
     "name": "Iliya Bolotov",
     "email": "bolotov.iliya.w@gmail.com",
-    "url": "https://i-atlas.github.io"
+    "url": "https://iliya-bolotov.vercel.app/"
   },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/I-Atlas/I-Atlas.github.io.git"
+    "url": "https://github.com/I-Atlas/iliya-bolotov.git"
   },
-  "homepage": "https://i-atlas.github.io/",
+  "homepage": "https://iliya-bolotov.vercel.app/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "axios": "^0.21.0",
@@ -37,7 +37,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b build -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

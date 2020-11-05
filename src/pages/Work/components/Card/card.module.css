@@ -64,16 +64,16 @@
 }
 
 .github_button:hover {
-  color: #ffffff;
+  color: #fffdfc;
   background-color: #2c2c2c;
 }
 
 .homepage_button {
   margin: 10px;
-  color: #ff4444;
+  color: #cd5d5c;
   font-size: 18px;
   padding: 15px 42px;
-  border: solid 2.5px #ff4444;
+  border: solid 2.5px #cd5d5c;
   border-radius: 5px;
   text-align: center;
   max-width: 200px;
@@ -83,8 +83,8 @@
 }
 
 .homepage_button:hover {
-  color: #ffffff;
-  background-color: #ff4444;
+  color: #fffdfc;
+  background-color: #cd5d5c;
 }
 
 @media only screen and (max-width: 767px) {

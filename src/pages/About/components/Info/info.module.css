@@ -34,10 +34,10 @@ p {
 }
 
 .download_button {
-  color: #ff4444;
+  color: #cd5d5c;
   font-size: 18px;
   padding: 15px 30px;
-  border: solid 2.5px #ff4444;
+  border: solid 2.5px #cd5d5c;
   border-radius: 5px;
   text-align: center;
   max-width: 200px;
@@ -47,8 +47,8 @@ p {
 }
 
 .download_button:hover {
-  color: #ffffff;
-  background-color: #ff4444;
+  color: #fffdfc;
+  background-color: #cd5d5c;
 }
 
 .right {
