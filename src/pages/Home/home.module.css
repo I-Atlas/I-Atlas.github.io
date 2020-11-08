@@ -50,58 +50,99 @@
 
 @media only screen and (max-width: 800px) {
   .top {
-    top: 10%;
+    top: 8%;
+    font-size: 1.9em;
+  }
+
+  .center {
+    font-size: 7em;
+  }
+
+  .bottom {
+    font-size: 1.9em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .top {
+    top: 8%;
     font-size: 1.8em;
   }
 
   .center {
-    font-size: 6em;
+    font-size: 6.2em;
   }
 
   .bottom {
     font-size: 1.8em;
-    top: 75%;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .top {
-    font-size: 1.4em;
+    font-size: 1.7em;
   }
 
   .center {
-    color: #ff6f61;
-    font-size: 4em;
+    font-size: 5.2em;
+  }
+
+  .bottom {
+    top: 75%;
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .top {
+    top: 5%;
+    font-size: 1.6em;
+  }
+
+  .center {
+    font-size: 4.2em;
   }
 
   .bottom {
     top: 80%;
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
 }
 
 @media only screen and (max-width: 414px) {
   .top {
-    top: 8%;
-    font-size: 1.3em;
+    top: 6.5%;
+    font-size: 1.5em;
   }
 
   .center {
-    font-size: 3em;
+    font-size: 3.6em;
   }
 
   .bottom {
-    top: 80%;
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 }
 
 @media only screen and (max-width: 360px) {
   .top {
-    top: 12%;
+    top: 10%;
+  }
+  .center {
+    font-size: 3.2em;
   }
 
   .bottom {
     top: 75%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .top {
+    top: 8%;
+  }
+
+  .bottom {
+    top: 70%;
   }
 }
