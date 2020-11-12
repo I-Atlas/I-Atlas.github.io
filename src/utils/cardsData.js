@@ -6,7 +6,7 @@ export const cardsData = [
     description:
       "Arkanoid game inspired by Breakout (1976) and Super Breakout (1978) created by Atari.",
     stack: "JavaScript",
-    image: "👾",
+    emoji: "👾",
   },
   {
     name: "Covid-19 Tracker",
@@ -15,7 +15,7 @@ export const cardsData = [
     description:
       "Live statistics tracking the number of confirmed cases, recovered patients, and death toll due to the COVID-19 coronavirus.",
     stack: "JavaScript, React",
-    image: "🦠",
+    emoji: "🦠",
   },
   {
     name: "Sol",
@@ -25,16 +25,25 @@ export const cardsData = [
     description:
       "Sol is a Discord bot written in Python, featuring moderation, informative, and fun commands.",
     stack: "Python",
-    image: "☀️",
+    emoji: "☀️",
   },
   {
     name: "Iliya-Bolotov",
     github: "https://github.com/I-Atlas/iliya-bolotov",
     homepage: "https://iliya-bolotov.vercel.app/",
-    description: "This website.",
+    description: "My personal page (this website).",
     stack:
       "JavaScript, React, Redux, Three.js, React Three Fiber, React Spring",
-    image: "💻",
+    emoji: "💻",
+  },
+  {
+    name: "Iliya-Bolotov-Server",
+    github: "https://github.com/I-Atlas/iliya-bolotov-server",
+    homepage: "https://iliya-bolotov.vercel.app/",
+    description: "Server for my personal page (this website).",
+    stack:
+      "TypeScript, Node.js, Express, MongoDB",
+    emoji: "⚙️",
   },
   {
     name: "Minesweeper",
@@ -43,7 +52,7 @@ export const cardsData = [
     description:
       "Minesweeper game inspired by Microsoft Minesweeper (Windows 98) and original game from 1960.",
     stack: "TypeScript, React",
-    image: "💣",
+    emoji: "💣",
   },
   {
     name: "To Do",
@@ -51,7 +60,7 @@ export const cardsData = [
     homepage: "",
     description: "Simple To Do list with CRUD operations.",
     stack: "JavaScript, React, Redux, Node.js, Express, MongoDB",
-    image: "📋",
+    emoji: "📋",
   },
   {
     name: "Books",
@@ -60,7 +69,7 @@ export const cardsData = [
     description:
       "Book store with CRUD operations, different data sorts, sign in, sing up and many others.",
     stack: "JavaScript, React, Redux, Node.js, Express, PostgreSQL",
-    image: "📚",
+    emoji: "📚",
   },
   {
     name: "Trutht",
@@ -69,7 +78,7 @@ export const cardsData = [
     description:
       "Trutht is a tool that allows you to quickly generate a truth table.",
     stack: "Python",
-    image: "📖",
+    emoji: "📖",
   },
   {
     name: "Mars Weather",
@@ -78,6 +87,6 @@ export const cardsData = [
     description:
       "InSight is taking daily weather measurements on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator.",
     stack: "JavaScript, React",
-    image: "🔭",
+    emoji: "🔭",
   },
 ];

@@ -1,14 +1,12 @@
 <h1 align="center">
 <br>
-I-Atlas.github.io
+Iliya-Bolotov
 <br>
 </h1>
 
 ## My Personal page
 
-Technologies used:
-
-### Frontend:
+### Technologies used:
 - JavaScript
 - React
 - Redux / Thunk

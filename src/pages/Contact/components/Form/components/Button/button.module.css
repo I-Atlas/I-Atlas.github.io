@@ -54,15 +54,21 @@
   transform: rotate(-45deg);
 }
 
-@media only screen and (max-width: 767px) and (min-height: 568px) {
+@media only screen and (max-width: 900px) {
   .form_button {
     margin: 20px;
     transform: scale(1.1);
   }
 }
 
-@media only screen and (max-height: 500px) {
+@media only screen and (max-width: 600px) {
   .form_button {
-    transform: scale(1.1);
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .form_button {
+    transform: scale(0.95);
   }
 }

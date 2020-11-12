@@ -31,7 +31,7 @@ function Card(props) {
             className={styles.emoji}
             style={{ transform: spring.xy.interpolate(trans3) }}
           >
-            {props.image}
+            {props.emoji}
           </animated.h1>
         </div>
         <animated.div

@@ -1,10 +1,22 @@
 import React from "react";
+// import React, { useState, useEffect } from "react";
+// import { CardsData } from "../../api";
 import { Card } from "./components";
 import { Container, Grid } from "@material-ui/core";
 import { Menu, Footer } from "../../components";
 import { cardsData } from "../../utils";
 
 function Work() {
+  /** For fetch data from the server
+   * const [data, setData] = useState([]);
+   * useEffect(() => {
+   * const receivedData = async () => {
+   * setData(await CardsData.getData());
+   * };
+   * receivedData();
+   * }, []);
+   */
+
   return (
     <React.Fragment>
       <Menu items={["home", "contact", "about"]} />
@@ -19,7 +31,7 @@ function Work() {
                 homepage={data.homepage}
                 language={data.stack}
                 description={data.description}
-                image={data.image}
+                emoji={data.emoji}
               />
             );
           })}

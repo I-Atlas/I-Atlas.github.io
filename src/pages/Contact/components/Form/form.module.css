@@ -1,6 +1,6 @@
 .form {
   height: 100vh;
-  width: 50vh;
+  width: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,9 +23,9 @@ textarea {
 }
 
 .form textarea {
-  height: 150px;
-  min-height: 100px;
-  max-width: 50vh;
+  height: 10rem;
+  min-height: 10rem;
+  max-width: 35rem;
 }
 
 .form label {
@@ -34,27 +34,42 @@ textarea {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 767px) and (min-height: 568px) {
+@media only screen and (max-width: 900px) {
   .form {
-    width: 30vh;
+    width: 25rem;
   }
 
   .form textarea {
-    max-width: 30vh;
+    max-width: 25rem;
   }
 }
 
-@media only screen and (max-height: 500px) and (min-width: 500px) {
+@media only screen and (max-width: 600px) {
   .form {
-    margin-top: 50vh;
-    margin-bottom: 50vh;
+    width: 20rem;
   }
 
-  .form {
-    width: 90vh;
+  .form h1 {
+    font-size: 1.5em;
+  }
+
+  .form label,
+  input,
+  textarea {
+    font-size: 1em;
   }
 
   .form textarea {
-    max-width: 90vh;
+    max-width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .form {
+    width: 15rem;
+  }
+
+  .form textarea {
+    max-width: 15rem;
   }
 }
