@@ -17,8 +17,7 @@
 
 ## 🧰 Addition
 
-I also have a small api for this page
-. You can see the repository [here](https://github.com/I-Atlas/iliya-bolotov-server).
+I also have a small api for this page. You can see the repository [here](https://github.com/I-Atlas/iliya-bolotov-server).
 ## 📄 License
 
-The project is licensed under the [Apache license 2.0](https://github.com/I-Atlas/iliya-bolotov/LICENSE).
+The project is licensed under the [Apache license 2.0](https://github.com/I-Atlas/iliya-bolotov/blob/master/LICENSE).
