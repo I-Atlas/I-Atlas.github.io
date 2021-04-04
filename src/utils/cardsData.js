@@ -1,4 +1,39 @@
-export const cardsData = [
+export const commercialProjects = [
+  {
+    name: "BCS Bank",
+    github: "",
+    homepage: "https://bank.bcs.ru/",
+    description: "Personal account of the bank for investors.",
+    stack: "TypeScript · React · Node.js",
+    emoji: "🏦",
+  },
+];
+
+export const personalProjects = [
+  {
+    name: "RGX",
+    github: "https://github.com/I-Atlas/rgx",
+    homepage: "https://rgx.vercel.app/",
+    description: "A set of ready-made regular expressions.",
+    stack: "TypeScript · React · framer-motion",
+    emoji: "⚓",
+  },
+  {
+    name: "Ultrasenses ui",
+    github: "https://github.com/ultrasenses/ultrasenses-ui",
+    homepage: "/",
+    description: "Ui themes and React components.",
+    stack: "TypeScript · Lerna · Storybook",
+    emoji: "🔱",
+  },
+  {
+    name: "Ultrasenses utils",
+    github: "https://github.com/ultrasenses/ultrasenses-utils",
+    homepage: "",
+    description: "A set of ready-made regular expressions.",
+    stack: "JavaScript · Lerna",
+    emoji: "🧰",
+  },
   {
     name: "Arkanoid",
     github: "https://github.com/I-Atlas/arkanoid",
@@ -14,7 +49,7 @@ export const cardsData = [
     homepage: "https://i-atlas.github.io/covid-19-tracker/",
     description:
       "Live statistics tracking the number of confirmed cases, recovered patients, and death toll due to the COVID-19 coronavirus.",
-    stack: "JavaScript, React",
+    stack: "JavaScript · React",
     emoji: "🦠",
   },
   {
@@ -33,7 +68,7 @@ export const cardsData = [
     homepage: "https://iliya-bolotov.vercel.app/",
     description: "My personal page (this website).",
     stack:
-      "JavaScript, React, Redux, Three.js, React Three Fiber, React Spring",
+      "JavaScript · React · Redux · Three.js · React Three Fiber · React Spring",
     emoji: "💻",
   },
   {
@@ -41,8 +76,7 @@ export const cardsData = [
     github: "https://github.com/I-Atlas/iliya-bolotov-server",
     homepage: "https://iliya-bolotov.vercel.app/",
     description: "Server for my personal page (this website).",
-    stack:
-      "TypeScript, Node.js, Express, MongoDB",
+    stack: "TypeScript · Node.js · Express · MongoDB",
     emoji: "⚙️",
   },
   {
@@ -51,7 +85,7 @@ export const cardsData = [
     homepage: "",
     description:
       "Minesweeper game inspired by Microsoft Minesweeper (Windows 98) and original game from 1960.",
-    stack: "TypeScript, React",
+    stack: "TypeScript · React",
     emoji: "💣",
   },
   {
@@ -59,7 +93,7 @@ export const cardsData = [
     github: "https://github.com/I-Atlas/to-do",
     homepage: "",
     description: "Simple To Do list with CRUD operations.",
-    stack: "JavaScript, React, Redux, Node.js, Express, MongoDB",
+    stack: "JavaScript · React · Redux · Node.js · Express · MongoDB",
     emoji: "📋",
   },
   {
@@ -68,7 +102,7 @@ export const cardsData = [
     homepage: "",
     description:
       "Book store with CRUD operations, different data sorts, sign in, sing up and many others.",
-    stack: "JavaScript, React, Redux, Node.js, Express, PostgreSQL",
+    stack: "JavaScript · React · Redux · Node.js · Express · PostgreSQL",
     emoji: "📚",
   },
   {
@@ -86,7 +120,7 @@ export const cardsData = [
     homepage: "",
     description:
       "InSight is taking daily weather measurements on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator.",
-    stack: "JavaScript, React",
+    stack: "JavaScript · React",
     emoji: "🔭",
   },
 ];
