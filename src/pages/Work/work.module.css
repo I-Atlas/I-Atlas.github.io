@@ -1,0 +1,10 @@
+.type {
+  text-align: center;
+  color: #585858;
+}
+
+@media only screen and (max-width: 767px) {
+  .type {
+    font-size: 1.8rem;
+  }
+}

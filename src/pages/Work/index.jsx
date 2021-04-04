@@ -1,28 +1,34 @@
 import React from "react";
-// import React, { useState, useEffect } from "react";
-// import { CardsData } from "../../api";
 import { Card } from "./components";
 import { Container, Grid } from "@material-ui/core";
 import { Menu, Footer } from "../../components";
-import { cardsData } from "../../utils";
+import { personalProjects, commercialProjects } from "../../utils";
+import styles from "./work.module.css";
 
 function Work() {
-  /** For fetch data from the server
-   * const [data, setData] = useState([]);
-   * useEffect(() => {
-   * const receivedData = async () => {
-   * setData(await CardsData.getData());
-   * };
-   * receivedData();
-   * }, []);
-   */
-
   return (
     <React.Fragment>
       <Menu items={["home", "contact", "about"]} />
       <Container maxWidth="lg">
+        <h1 className={styles.type}>Commercial projects</h1>
         <Grid container alignItems="center" justify="center">
-          {cardsData.map((data, index) => {
+          {commercialProjects.map((data, index) => {
+            return (
+              <Card
+                key={index}
+                github={data.github}
+                title={data.name}
+                homepage={data.homepage}
+                language={data.stack}
+                description={data.description}
+                emoji={data.emoji}
+              />
+            );
+          })}
+        </Grid>
+        <h1 className={styles.type}>My projects</h1>
+        <Grid container alignItems="center" justify="center">
+          {personalProjects.map((data, index) => {
             return (
               <Card
                 key={index}

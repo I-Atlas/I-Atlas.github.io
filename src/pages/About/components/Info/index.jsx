@@ -9,14 +9,15 @@ function Info(props) {
         <h1 className={styles.title}>Iliya Bolotov</h1>
         <h2 className={styles.subtitle}>software & web developer</h2>
         <p>
-          Hi, I am a developer, a 2022 graduate with a Computer Science degree.
+          Hi, I am a software engineer, a 2022 graduate with a Computer Science
+          degree.
         </p>
         <p>
           I care about the development & design more than anything. I strive for
           creating human-centered experience in my work.
         </p>
         <p>
-          I am actively looking for a job, don't hesitate to{" "}
+          Don't hesitate to{" "}
           <Link className={styles.link} to="/contact">
             contact me
           </Link>{" "}
